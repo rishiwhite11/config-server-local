@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rishiwhite11/spring-cloud-properties
+          repos:
+            fifa:
+              pattern: fifa*/dev*
+              cloneOnStart: true
+              uri: https://github.com/rishiwhite11/spring-cloud-simple-properties
+          search-paths: '{application}'
